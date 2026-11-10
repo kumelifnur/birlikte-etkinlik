@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f4f1"><title>Birlikte — şehir etkinlikleri</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="nav"><a class="logo" href="#">birlikte<span>.</span></a><span class="nav-caption">Şehrinde güzel şeyler oluyor</span><button id="savedToggle" class="saved-toggle">♡ <span>Kaydettiklerim</span><b id="savedCount">0</b></button></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">ŞEHRİNİ YENİDEN KEŞFET</p><h1>Planın yoksa,<br><em>bir tane bul.</em></h1><p class="intro-copy">Küçük konserlerden açık hava gösterimlerine,<br>yakınındaki etkinliklere göz at.</p></div><div class="shape"><span>✳</span><i></i></div></section>
+    <section class="controls"><div class="search"><span>⌕</span><input id="searchInput" placeholder="Etkinlik veya mekan ara…" aria-label="Etkinlik ara"></div><div class="chips" id="chips"><button class="chip active" data-category="Tümü">Tümü</button><button class="chip" data-category="Müzik">Müzik</button><button class="chip" data-category="Sanat">Sanat</button><button class="chip" data-category="Yemek">Yemek</button><button class="chip" data-category="Açık hava">Açık hava</button></div><select id="citySelect" aria-label="Şehir seç"><option value="Tümü">Tüm şehirler</option><option>İstanbul</option><option>Ankara</option><option>İzmir</option></select></section>
+    <section class="results-head"><h2 id="resultsTitle">Yaklaşan etkinlikler</h2><span id="resultsCount"></span></section>
+    <section id="eventGrid" class="grid"></section>
+    <section id="empty" class="empty" hidden>Aramana uygun etkinlik bulamadık. Filtreleri değiştirmeyi dene.</section>
+    <footer>Birlikte · Örnek etkinlik keşif arayüzü <span>Etkinlik bilgileri demo amaçlıdır.</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
